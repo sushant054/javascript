@@ -2,7 +2,7 @@
 //Example:str=“abcdabcdefgggh”
 //ans=“abcdefgh”
 let str="abcdabcdefgggh";
-function getUnique (str){
+function getUnique(str){
     let ans="";
     for(let i=0; i< str.length;i++)
         {
@@ -10,7 +10,8 @@ function getUnique (str){
             if(ans.indexOf(currChar)==-1){
                 ans+=currChar;
             }
-        }
+            }
         return ans;
 }
-getUnique(str);
+let result=getUnique(str);
+console.log(result);
