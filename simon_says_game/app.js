@@ -4,8 +4,6 @@ let started =false;
 let level =0;
 let h2= document.querySelector("h2");
 let btns=["yellow","red","purple","green"];
-
-
 document.addEventListener("keypress", function() {
  if(started==false){
     console.log("game started!");
@@ -53,12 +51,15 @@ function checkAns(idx){
     else 
     {
      h2.innerHTML=`Game Over! Your score was <b>${level}</b> <br> Press any key to start.`;
-     //document.querySelector("body").style.backgroundColor =" red";
+     document.querySelector("body").style.backgroundColor =" red";
     // setTimeout(function (){
-      //  document.querySelector("body").style.backgroundColor ="white";
+    //    document.querySelector("body").style.backgroundColor ="white";
     // },150);
     // setTimeout();
-     reset();
+     setTimeout(function (){
+        reset();
+    },2000);
+     
     }
  }
 
@@ -84,5 +85,25 @@ function reset(){
      gameSeq = [];
      userSeq =[];
      level =0;
- 
+     document.querySelector("body").style.backgroundColor ="white";
 }
+//change heading color using callbacks nesting is also known as callback hell
+h1=document.querySelector("h1");
+function changeColor(color, delay, nextColorChange){
+    setTimeout(()=> {
+        h1.style.color=color;
+        if(nextColorChange)nextColorChange();
+
+    },delay);
+}
+
+changeColor("red",500,()=>{
+    changeColor("orange",2000,()=>{
+        changeColor("green",1000,()=>{
+            changeColor("black",1000)
+        });
+    });
+});
+
+
+
