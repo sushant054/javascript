@@ -72,7 +72,7 @@ function btnPress(){
     userSeq.push(userColor);
     console.log(userColor);
     checkAns(userSeq.length-1);
-   // checkAns();
+  
 }
 
 let allBtns= document.querySelectorAll(".btn");
