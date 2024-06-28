@@ -9,5 +9,6 @@ function PersonMaker(name, age){
     };
     return person;
 }
-let p1=PersonMaker("sushh",25);
+
+let p1=PersonMaker("sushant",25);
 let p2=PersonMaker("sonu",25);
