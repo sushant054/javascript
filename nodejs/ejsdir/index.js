@@ -6,7 +6,6 @@ const app= express();
 //console.log(app);
 let port =3000;
 //
-
 //serving static files
 //app.use(express.static(__dirname,"public"));
 app.use(serveStatic(path.join(__dirname, 'public')));
