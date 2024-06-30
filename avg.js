@@ -3,7 +3,6 @@ function avg(a,b,c){
     console.log(avg);
 }
 avg(2,5,7);
-// printing table using function..
 function printtable(n)
 {
     for(let i=n;i<=n*10;i+=n)
