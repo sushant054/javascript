@@ -1,4 +1,4 @@
-//square and sum the array element and calculate average of the array
+//square and sum the array element and calculate average of the array..
 let nums=[1,2,3,4,5];
 const square =nums.map((num)=> num*num);
 console.log(square);
