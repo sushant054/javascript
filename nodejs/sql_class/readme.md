@@ -1,4 +1,4 @@
-# Oprations on database using nodejs
+# Operations on database using nodejs
 ```
 1.Showing information from database using ejs(embedded javascript templates)
 2.Add new user
